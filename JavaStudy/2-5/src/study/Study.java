@@ -10,6 +10,7 @@ package study;
 import java.util.ArrayList;
 import java.util.LinkedHashMap;
 import java.util.List;
+import java.util.Map;
 
 public class Study {
     public static final String SHOP_SHOHIN_00 = "バナナ";
@@ -40,14 +41,9 @@ public class Study {
 
         // ③ カリキュラムを参考に拡張for文を使って、課題の画像と同じ表示になるよう記述してください。
         // 「shohinList」と「shopMap」が保持する値を上手く利用しましょう。
-        System.out.println(shohinList.get(0) + "=" + shopMap.get(shohinList.get(0)) + "円になります！");
-        System.out.println(shohinList.get(1) + "=" + shopMap.get(shohinList.get(1)) + "円になります！");
-        System.out.println(shohinList.get(2) + "=" + shopMap.get(shohinList.get(2)) + "円になります！");
-        System.out.println(shohinList.get(3) + "=" + shopMap.get(shohinList.get(3)) + "円になります！");
-
-
-
-
+        for (Map.Entry<String, Integer> entry : shopMap.entrySet()) {
+            System.out.println(entry.getKey() + "=" + entry.getValue() + "円になります！");
+        }
 
     }
 
