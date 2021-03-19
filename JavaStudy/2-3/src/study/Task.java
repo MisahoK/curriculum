@@ -23,11 +23,11 @@ public class Task extends Calculator {
         // 尚、「どのクラスから呼び出しているか」を明確にするため、plus()には呼び出し元のキーワードを付与すること。←？
         //superをつけるってこと？
 
-        System.out.println("plusメソッドの値が一つの場合:" + plus(10));
+        System.out.println("plusメソッドの値が一つの場合:" + super.plus(10));
 
-        System.out.println("plusメソッドの値が二つの場合:" + plus(10, 20));
+        System.out.println("plusメソッドの値が二つの場合:" + super.plus(10, 20));
 
-        System.out.println("plusメソッドの値が三つの場合:" + plus(10, 20, 30));
+        System.out.println("plusメソッドの値が三つの場合:" + super.plus(10, 20, 30));
 
     }
 
