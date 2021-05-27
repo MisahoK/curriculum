@@ -1,0 +1,103 @@
+body {
+    /*min-height: 100%; 
+    height: 100%;*/
+    width: 100%;
+}
+
+
+/*clearfixの指定。これを最初に書くとHTMLで指定したclearfixに全て対応させられる*/
+.clearfix::after { 
+    content: ''; 
+    display: block; 
+    clear: both;
+}
+
+
+.wrapper {
+    width: 400px; 
+    margin: 0 auto; 
+/* wrapperクラスを中央寄せ */
+}
+
+/** header **/
+.header { 
+    height: 100px; 
+    background-color: #141f40;
+}
+/** end of header **//** contents **/
+
+
+.contents { 
+    /*height: 250px;*/　/*この指定がよくない？*/
+}
+
+/** left **/
+/*呼び出される左側のカラムのクラス*/
+.left { 
+    float: left;
+    width: 150px;
+    height: 250px;
+    background-color: #80bfa8;
+}
+/** end of left **/
+
+
+/** right **/
+.right { 
+    float: left; 
+    width: 250px; 
+    /*height: 250px;*/
+}
+
+.right-upper {
+    float: left;
+    width: 250px;
+    /*height: 150px;*/
+}
+
+.right-left {
+    float: left;
+    width: 150px;
+}
+
+.right-l-upper {
+    height: 50px;
+    background-color: #dbd400;
+}
+
+.right-l-lower {
+    height: 100px;
+    background-color: #0093b7;
+}
+
+.right-r {
+    float: left;
+    width: 100px;
+    height: 150px;
+    background-color: #ff9e6b;
+}
+
+.right-lower {
+    float: left;
+    width: 250px;
+    height: 100px;
+    background-color: #8c2727
+}
+/** end of right **/
+
+/** end of contents **/
+/** footer **/
+.footer {
+    height: 100px;
+    background-color: #d98d30;
+}
+/** end of footer **/
+
+/* reset.css*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+}
+/** end of right **/
